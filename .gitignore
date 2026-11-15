@@ -1,0 +1,37 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---- 密钥 / 本地配置 ----
+.env
+*.key
+
+# ---- 数据集与训练产物（体积大，不入库）----
+data/
+outputs/
+*.pth
+*.safetensors
+*.arrow
+*.mp4
+*.zip
+.cache/
+
+# ---- 调试与临时产物 ----
+camera_probe/
+eval_trials/
+eval_loop_analysis/
+tmp_*
+*.tmp
+*.log
+
+# ---- 第三方代码（lerobot fork 单独获取，见 docs/patches.md）----
+genkiarm/
+官方sdk依赖/
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
